@@ -1,0 +1,117 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <title>Sandeep</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+
+        <!-- Tailwind CSS (Compiled) -->
+        <link
+            rel="stylesheet"
+            href="{{ '/assets/css/style.css' | relative_url }}"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="{{ '/assets/images/favicon.ico' | relative_url }}"
+        />
+    </head>
+    <body
+        class="is-preload bg-black text-white/75 font-sans h-screen overflow-hidden flex flex-col items-center justify-center relative select-none"
+    >
+        <!-- Header -->
+        <header
+            id="header"
+            class="relative z-10 text-center px-4 mb-8 transition-opacity duration-200"
+        >
+            <p class="text-xl leading-relaxed mb-4 md:text-2xl">
+                “We are what we think. All that we are arises with our thoughts.
+                With our thoughts, we make the world.”
+            </p>
+            <p class="text-right pr-4 md:pr-12 text-sm md:text-base">
+                -- Goutama Buddha
+            </p>
+            <div class="mt-8">
+                <a
+                    href="/blog"
+                    class="inline-block px-6 py-2 border border-white/25 hover:border-white text-white/75 hover:text-white rounded transition-colors duration-300"
+                >
+                    Read Blog
+                </a>
+            </div>
+        </header>
+
+        <!-- Footer -->
+        <footer
+            id="footer"
+            class="absolute bottom-4 left-4 z-10 transition-opacity duration-500 ease-in-out opacity-50 hover:opacity-100 text-white/50 md:bottom-16 md:left-16 sm:bottom-8 sm:left-8"
+        >
+            <ul class="flex gap-4 mb-2 list-none p-0">
+                <li>
+                    <a
+                        href="https://twitter.com/usandeepc"
+                        class="hover:text-white transition-colors"
+                        aria-label="Twitter"
+                    >
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/usandeepc/"
+                        class="hover:text-white transition-colors"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/usandeepc"
+                        class="hover:text-white transition-colors"
+                        aria-label="GitHub"
+                    >
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        data-email="c2FuZGVlcGNob3dkYXJ5dUBnbWFpbC5jb20="
+                        class="hover:text-white transition-colors"
+                        aria-label="Email"
+                    >
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex list-none p-0 text-sm">
+                <li class="border-l-0 pl-0">&copy; sandeepchowdary.in</li>
+                <li class="border-l border-white/25 ml-3 pl-3"></li>
+            </ul>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    </body>
+</html>

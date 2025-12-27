@@ -1,0 +1,17 @@
+title: Sandeep's Blog
+email: sandeepchowdaryu@gmail.com
+description: >-
+    Thoughts and writings.
+baseurl: ""
+url: "https://sandeepchowdary.in"
+
+# Build settings
+theme: null
+exclude:
+    - node_modules
+    - vendor
+    - package.json
+    - package-lock.json
+    - .gitignore
+    - src
+    - README.md

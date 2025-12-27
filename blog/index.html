@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="space-y-12">
+    {% for post in site.posts %}
+    <article class="border-b border-white/10 pb-8 last:border-0">
+        <div class="text-sm text-white/50 mb-2">{{ post.date | date: "%B %d, %Y" }}</div>
+        <h2 class="text-2xl font-bold text-white mb-3">
+            <a href="{{ post.url }}" class="hover:text-[#1cb495] transition-colors">{{ post.title }}</a>
+        </h2>
+        <p class="text-white/70 mb-4 line-clamp-3">
+            {{ post.excerpt | strip_html }}
+        </p>
+        <a href="{{ post.url }}" class="text-white/50 hover:text-white text-sm border-b border-white/25 pb-0.5 transition-colors">Read more</a>
+    </article>
+    {% endfor %}
+</div>

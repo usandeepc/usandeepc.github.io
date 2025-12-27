@@ -1,0 +1,31 @@
+{
+    "name": "usandeepc.github.io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "tailwind.config.js",
+    "scripts": {
+        "build:css": "npx @tailwindcss/cli -i src/input.css -o assets/css/style.css --minify",
+        "build:jekyll": "bundle exec jekyll build",
+        "build": "npm run build:css && npm run build:jekyll",
+        "start": "npm run build:css -- --watch & bundle exec jekyll serve",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/usandeepc/usandeepc.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/usandeepc/usandeepc.github.io/issues"
+    },
+    "homepage": "https://github.com/usandeepc/usandeepc.github.io#readme",
+    "dependencies": {
+        "tailwindcss": "^4.1.18"
+    },
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.5.19"
+    }
+}

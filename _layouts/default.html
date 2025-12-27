@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <title>{{ page.title }} | Sandeep</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+
+        <!-- Tailwind CSS (Compiled) -->
+        <link
+            rel="stylesheet"
+            href="{{ '/assets/css/style.css' | relative_url }}"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="{{ '/assets/images/favicon.ico' | relative_url }}"
+        />
+    </head>
+    <body
+        class="bg-black text-white/75 font-sans min-h-screen flex flex-col items-center relative select-none"
+    >
+        <!-- Header -->
+        <header id="header" class="relative z-10 text-center px-4 mt-16 mb-12">
+            <nav class="mb-8">
+                <a
+                    href="/"
+                    class="text-white/50 hover:text-white transition-colors text-lg mx-4"
+                    >Home</a
+                >
+                <a
+                    href="/blog"
+                    class="text-white hover:text-white transition-colors text-lg mx-4 font-bold border-b border-white/25 pb-1"
+                    >Blog</a
+                >
+            </nav>
+            {% if page.title %}
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                {{ page.title }}
+            </h1>
+            {% endif %}
+        </header>
+
+        <!-- Content -->
+        <main class="relative z-10 w-full max-w-2xl px-6 mb-16">
+            {{ content }}
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="mt-auto pb-8 text-white/50 text-center">
+            <ul class="flex justify-center gap-6 mb-4 list-none p-0">
+                <li>
+                    <a
+                        href="https://twitter.com/usandeepc"
+                        class="hover:text-white transition-colors"
+                        ><i class="fab fa-twitter text-xl"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/usandeepc/"
+                        class="hover:text-white transition-colors"
+                        ><i class="fab fa-linkedin text-xl"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/usandeepc"
+                        class="hover:text-white transition-colors"
+                        ><i class="fab fa-github text-xl"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        data-email="c2FuZGVlcGNob3dkYXJ5dUBnbWFpbC5jb20="
+                        class="hover:text-white transition-colors"
+                        ><i class="fas fa-envelope text-xl"></i
+                    ></a>
+                </li>
+            </ul>
+            <p class="text-sm">&copy; sandeepchowdary.in</p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>
